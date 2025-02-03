@@ -1,0 +1,63 @@
+/**
+ * ----------------------------------------------------------------------------
+ * Quantity selector
+ * ----------------------------------------------------------------------------
+ */
+.QuantitySelector {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e7e7e7;
+  white-space: nowrap;
+
+  svg {
+    width: 10px;
+    height: 10px;
+    stroke-width: 1.5px;
+    vertical-align: -1px;
+  }
+
+  &__Button {
+    display: inline-block;
+    padding: 5px 9px;
+    /* this allows to slightly increase the clickable area */
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__CurrentQuantity {
+    display: inline-block;
+    width: 20px;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: normal;
+    background: transparent;
+    border: none;
+  }
+
+  @media screen and (min-width: 641px) {
+    &__Button {
+      padding: 7px 14px 8px 14px;
+    }
+
+    &__CurrentQuantity {
+      font-size: 12px;
+    }
+  }
+
+  &.QuantitySelector--large {
+    svg {
+      width: 11px;
+      height: 11px;
+    }
+
+    .QuantitySelector__CurrentQuantity {
+      width: 35px;
+      font-size: 14px;
+    }
+
+    .QuantitySelector__Button {
+      padding: 10px 20px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.Panel {
+  position: relative;
+  border: 1px solid #e7e7e7;
+  padding: 60px 24px;
+
+  &__Title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    padding: 10px 15px;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    background: #efefef;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .Panel {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

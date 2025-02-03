@@ -1,0 +1,17 @@
+.Faq__Section {
+  margin-bottom: 20px;
+
+  .Faq__Section~.Faq__Section {
+    margin-top: 34px;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .Faq__Section {
+    margin-bottom: 34px;
+  }
+
+  .Faq__Section~.Faq__Section {
+    margin-top: 60px;
+  }
+}

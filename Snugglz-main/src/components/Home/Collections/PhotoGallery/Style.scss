@@ -1,0 +1,118 @@
+/* MM-Gallery */
+
+.gallery-container-grid {
+  display: grid;
+  padding: 9px;
+  gap: 8px;
+  grid-template-areas:
+    "head1 head2 head3"
+    "head1 mid2 foot3"
+    "foot1 foot2 foot3";
+  text-align: center;
+  // max-width: 1400px;
+  // margin: auto;
+
+  .grid-block {
+    position: relative;
+    transition: all 0.3s ease-in;
+    max-width: 447px;
+  }
+
+  .gallery-img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .gallery-img-title {
+    font-family: "Abril Display Regular";
+    color: #ffffff;
+  }
+
+  .gallery-text-block {
+    padding: 31px 43px 48px;
+  }
+
+  .gallery-text-heading {
+    font-family: "Abril Display SemiBold";
+  }
+
+  .gallery-text-para {
+    font-family: "helveticaregula";
+  }
+
+  .gallery-overlay {
+    visibility: hidden;
+    transition: 300ms background-color;
+  }
+
+  .gallery-overlay-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    transition: all 0.3s ease-in;
+
+    button {
+      margin: inherit;
+    }
+  }
+
+  .grid-block:hover {
+    .gallery-overlay {
+      position: absolute;
+      visibility: visible;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+    .gallery-overlay-content {
+      visibility: visible;
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+}
+
+.block-num-1 {
+  grid-area: head1;
+}
+
+.block-num-4 {
+  grid-area: mid2;
+}
+
+.block-num-7 {
+  grid-area: foot3;
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery-container-grid {
+    grid-template-areas:
+      "head1 head2"
+      "head1 mid2"
+      "mid3 mid3"
+      "mid3 mid3"
+      "foot1 foot2"
+      "foot3 foot2";
+  }
+  .block-num-1 {
+    grid-area: head1;
+  }
+  .block-num-4 {
+    grid-area: mid3;
+  }
+  .block-num-7 {
+    grid-area: foot2;
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Abril Fatface";
+  // font-weight: 400;
+  font-style: normal;
+  src: local("Abril Fatface"),
+    url("./abril_fatface/AbrilFatface-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: local("Open Sans Regular"),
+    url("./open-sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: local("Open Sans Semibold"),
+    url("./open-sans/OpenSans-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: local("Open Sans Bold"),
+    url("./open-sans/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans ExtraBold";
+  src: local("Open Sans ExtraBold"),
+    url("./open-sans/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "helveticaregular";
+  src: local("helveticaregular"),
+    url("./helvetica/Helvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Abril Display Regular";
+  src: local("Abril Display Regular"),
+    url("./abril_display/Abril_Display_Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Abril Display SemiBold";
+  src: local("Abril Display SemiBold"),
+    url("./abril_display/Abril_Display_SemiBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Abril Display Bold";
+  src: local("Abril Display Bold"),
+    url("./abril_display/Abril_Display_Bold.otf") format("truetype");
+}

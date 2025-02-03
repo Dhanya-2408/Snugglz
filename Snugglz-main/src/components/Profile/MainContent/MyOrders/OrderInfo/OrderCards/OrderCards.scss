@@ -1,0 +1,45 @@
+.Order__Cards {
+  margin-bottom: 30px;
+
+  .Order__Card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+      0 1px 3px 0 rgba(63, 63, 68, 0.1);
+    padding: 13px;
+    margin-top: 25px;
+  }
+
+  .Card__Img {
+    flex: 0 0 90px;
+    margin-right: 22px;
+  }
+
+  .Card__Desc {
+    flex: 1 1;
+
+    > * {
+      margin: 5px 0 0;
+      word-wrap: break-word;
+      white-space: normal;
+      overflow: hidden;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .Order__Card {
+      flex-flow: column;
+      justify-content: center;
+    }
+
+    .Card__Img {
+      width: 100px;
+      margin: 0;
+    }
+
+    .Card__Desc > * {
+      text-align: center;
+    }
+  }
+}

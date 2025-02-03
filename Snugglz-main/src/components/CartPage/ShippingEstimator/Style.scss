@@ -1,0 +1,61 @@
+/**
+ * ----------------------------------------------------------------------------
+ * Shipping estimator
+ * ----------------------------------------------------------------------------
+ */
+
+.ShippingEstimator {
+  &__Results {
+    // height: 0;
+    overflow: hidden;
+    transition: height 0.25s ease-in-out;
+
+    p {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  &__Results,
+  &__Error {
+    margin-top: 32px;
+  }
+
+  @media screen and (max-width: 640px) {
+    &__Country,
+    &__Province,
+    &__Zip {
+      margin-bottom: 20px;
+    }
+
+    &__Submit {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 641px) {
+    &__Form {
+      display: flex;
+
+      > *:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+
+    &__Country,
+    &__Province,
+    &__Zip,
+    &__Submit {
+      margin-bottom: 0 !important;
+    }
+
+    &__Country,
+    &__Province {
+      flex: 1;
+    }
+
+    &__Zip {
+      max-width: 130px;
+    }
+  }
+}

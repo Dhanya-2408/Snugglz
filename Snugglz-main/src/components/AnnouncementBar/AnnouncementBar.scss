@@ -1,0 +1,47 @@
+.AnnouncementBar {
+  background: #000000;
+  color: #ffffff;
+  overflow: hidden;
+  transform: translateZ(0);
+
+  .AnnouncementBar__Wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    white-space: nowrap;
+    width: auto;
+    padding: 12px 15px;
+    animation: marquee-left 20s linear infinite alternate;
+  }
+
+  .AnnouncementBar__Wrapper--right {
+    animation-name: marquee-right;
+  }
+
+  .AnnouncementBar__Content {
+    flex: 0 0 auto;
+    margin: 0 100px;
+    display: block;
+    span {
+      color: #d3b289;
+    }
+  }
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(-1%);
+  }
+  to {
+    transform: translateX(-51%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-51%);
+  }
+  to {
+    transform: translateX(-1%);
+  }
+}

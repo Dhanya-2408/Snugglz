@@ -1,0 +1,25 @@
+.ProductList__Slider {
+  .slick-prev,
+  .slick-next {
+    top: 35%;
+    z-index: 4;
+    &::before {
+      content: "";
+    }
+  }
+
+  .slick-prev {
+    left: 35px;
+  }
+
+  .slick-next {
+    right: 25px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  }
+}

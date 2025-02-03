@@ -1,0 +1,41 @@
+.OrderSummary {
+  margin-top: 20px;
+
+  &__Unit {
+    display: flex;
+    flex-flow: column;
+    // justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+  }
+}
+
+.Address__Summary {
+  border: 1px solid #e5e5e5;
+  padding: 20px 10px;
+  margin: 10px auto;
+
+  .Address-nameNumber {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+
+    > :first-child {
+      margin-right: 8px;
+    }
+    .Address-verticalDivider {
+      width: 2px;
+      height: 18px;
+      border-left: 1px solid #e5e5e5;
+    }
+
+    > :last-child {
+      margin-left: 8px;
+    }
+  }
+}

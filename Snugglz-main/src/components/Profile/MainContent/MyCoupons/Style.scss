@@ -1,0 +1,34 @@
+.coupon-card {
+  background-color: white;
+  //   padding: 0% 2%;
+  margin: 20px 0;
+  color: #282c3f;
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.08);
+  border: 1px solid #eaeaec;
+  display: flex;
+
+  > * {
+    display: inherit;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+
+.coupon-off-component {
+  align-items: center;
+  width: 29%;
+  max-width: 100px;
+  color: #14cda8;
+  border-right: 1px solid #d4d5d9;
+  background: url(https://constant.myntassets.com/mymyntra/assets/img/sprite-5.png)
+    no-repeat;
+  background-position: -362px -380px;
+}
+
+.coupon-info {
+  padding: 20px 0px 10px 10px;
+
+  > * {
+    margin-bottom: 5px;
+  }
+}

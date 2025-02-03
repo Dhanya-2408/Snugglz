@@ -1,0 +1,48 @@
+.Cart__Taxes {
+  margin-bottom: 15px;
+  display: none;
+}
+
+.Cart__Checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.Cart--expanded {
+  .Cart__Footer {
+    padding-top: 25px;
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .Cart__Recap {
+    text-align: right;
+  }
+
+  .Cart__Taxes {
+    display: block;
+  }
+
+  .Cart__Checkout,
+  .Cart__Recap {
+    margin-top: 16px;
+  }
+
+  .Cart__Checkout {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .Cart--expanded {
+    .Cart__Footer {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+    .Cart__Recap {
+      display: table-cell;
+    }
+  }
+}

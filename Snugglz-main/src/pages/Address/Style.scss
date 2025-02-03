@@ -1,0 +1,28 @@
+.Address_Section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  // border-bottom: 1px solid #eee;
+  // padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  .Heading {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-flow: column;
+    align-items: center;
+
+    & > :nth-child(2) {
+      margin-top: 20px;
+      align-self: flex-start;
+    }
+  }
+}

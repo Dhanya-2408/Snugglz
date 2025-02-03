@@ -1,0 +1,102 @@
+.FeatureProduct_Wrapper {
+  position: relative;
+  margin-top: 1rem;
+
+  .FeatureProduct_Image {
+    vertical-align: bottom;
+    transition: opacity 0.3s ease-in;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .FeatureProduct_Overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in;
+
+    .FeatureProduct_Info {
+      top: 50%;
+      transform: translateY(-50.1%);
+      padding: 10px 0;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      pointer-events: none;
+      cursor: pointer;
+    }
+
+    .Heading {
+      color: #fff;
+    }
+
+    .FeatureProduct_Details {
+      position: relative;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+      display: block;
+      padding: 0 2em;
+
+      h4 {
+        margin-bottom: 5px;
+      }
+    }
+
+    .FeatureProduct_Quickshop {
+      opacity: 0;
+      margin-top: 2rem;
+      transform: translateY(100%);
+      transition: opacity 0.3s ease-out, transform 0.3s ease-out,
+        color 0.3s linear, background-color 0.3s linear;
+
+      button {
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        color: #fff;
+      }
+    }
+  }
+
+  &:hover {
+    .FeatureProduct_Overlay {
+      opacity: 1;
+    }
+
+    .FeatureProduct_Details,
+    .FeatureProduct_Quickshop {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .FeatureProduct_Holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .FeatureProduct_Sale {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      padding: 0;
+      position: relative;
+      top: 10px;
+      right: 10px;
+      text-align: center;
+      color: #fff;
+      background: #ff0000;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.Spec-TableContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: left;
+  margin-top: 30px;
+
+  .Spec-Row {
+    position: relative;
+    border-bottom: 1px solid #eaeaec;
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    flex-basis: 40%;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 10%;
+    }
+  }
+
+  .Spec-RowKey {
+    position: relative;
+    color: #7e818c;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .Spec-RowValue {
+    position: relative;
+    color: #282c3f;
+    line-height: 1.2;
+  }
+}

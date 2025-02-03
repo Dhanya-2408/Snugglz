@@ -1,0 +1,137 @@
+.SelectedProduct {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1600px;
+  min-height: 910px;
+
+  .ProductImages,
+  .Image_Wrapper {
+    position: relative;
+  }
+
+  .ProductPurchase {
+    position: absolute;
+    padding: 24px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 30%;
+    max-width: 350px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: background-color 0.5s ease-out 0.1s;
+    z-index: 4;
+
+    @media screen and (min-width: 641px) and (max-width: 1007px) {
+      width: 35%;
+    }
+
+    @media screen and (max-width: 640px) {
+      transform: none;
+      max-width: none;
+      text-align: center;
+      position: static;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .Grid {
+      display: flex;
+      flex-flow: column-reverse;
+    }
+
+    .Grid__Cell {
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+/**
+ * ----------------------------------------------------------------------------
+ * Product meta and Product form
+ * ----------------------------------------------------------------------------
+ */
+
+.Product__Description {
+  margin: 24px 0;
+  padding-top: 24px;
+}
+
+.ProductMeta {
+  // text-align: center;
+
+  &__PriceList {
+    margin-top: 15px;
+  }
+
+  .Product__Description {
+    // border-top: 1px solid #e7e7e7;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1008px) {
+    .ProductMeta {
+      text-align: left;
+    }
+  }
+}
+
+.ProductForm {
+  margin-top: 24px;
+
+  .Form__Header {
+    text-align: left;
+  }
+
+  &__Variants {
+    margin-bottom: 25px;
+  }
+
+  &__Option {
+    position: relative;
+    margin-bottom: 10px;
+    &--labelled {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__Label {
+    display: block;
+    margin-bottom: 8px;
+    em {
+      color: #e95144;
+    }
+  }
+
+  &__LabelLink {
+    // float: right;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #b9b9b9;
+    margin-bottom: 20px;
+
+    img {
+      vertical-align: middle;
+      padding-right: 10px;
+    }
+  }
+
+  &__AddFav {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    &.isActive {
+      color: #d3b289;
+      button {
+        color: inherit;
+      }
+    }
+  }
+}

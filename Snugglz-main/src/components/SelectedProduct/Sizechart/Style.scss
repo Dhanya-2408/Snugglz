@@ -1,0 +1,14 @@
+#Modal__SizeChart {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .Modal__Header {
+    display: none;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .Modal__Content > * {
+      padding: 0;
+    }
+  }
+}

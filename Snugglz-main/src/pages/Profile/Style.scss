@@ -1,0 +1,49 @@
+.Profile {
+  background-color: #e7e7e7;
+}
+
+.Dashbord__Container {
+  min-height: 500px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 35px 30px !important;
+
+  .Dashbord__Rows {
+    display: flex;
+    flex-flow: column;
+    // padding: 50px 0;
+
+    .Dashbord__SideNav,
+    .Dashbord__Main {
+      background-color: #fff;
+      box-shadow: 0 0 30px 2px #e0e0e0;
+      box-sizing: border-box;
+      padding: 20px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+
+  .Dashbord__SideNav {
+    .Form__Group {
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  .Address_Block {
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+
+  @media (max-width: 1007px) {
+    padding: 35px 10px !important;
+  }
+
+  @media screen and (max-width: 350px) {
+    .Panel {
+      border: none;
+      padding: 60px 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.PricingOverview {
+  margin-bottom: 0;
+  padding: 20px 0;
+  background: #fff;
+
+  // &__Title {
+  //   margin: 24px 0;
+  // }
+
+  &__Unit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  // > :nth-child(3) {
+  //   color: #ff3f6c !important;
+  // }
+
+  > :last-child {
+    border-top: 1px solid #ddd;
+    padding: 24px 0 0;
+    color: #d3b289;
+
+    // margin-bottom: 32px;
+    // font-weight: 500;
+  }
+}

@@ -1,0 +1,19 @@
+.RadioSwatch__Label {
+  display: inline-block;
+  text-align: center;
+  min-width: 36px;
+  padding: 6px 10px;
+  border: 1px solid #e7e7e7;
+  color: #939393;
+  cursor: pointer;
+}
+
+.RadioSwatch__Input {
+  display: none;
+  &:checked + .RadioSwatch__Label {
+    border-color: #5c5c5c;
+    color: #5c5c5c;
+    background: var(--main-color);
+    color: #fff;
+  }
+}
